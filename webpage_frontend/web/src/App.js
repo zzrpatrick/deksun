@@ -1,20 +1,29 @@
 
 //core
 import React from 'react';
+import { Layout, Row } from 'antd';
 
 
 //css
 import './App.css';
 import 'antd/dist/antd.css';
 
-//component
-import Topbanner from "./component/HomePage/Topbanner.jsx"
+//componentx
+import HeaderContainer from "./component/Header/HeaderContainer.jsx"
+import BodyContainer from "./component/Body/BodyContainer.jsx"
+import Router from "./router/router.js"
+// const { Header, Footer, Sider, Content } = Layout;
+
 function App() {
   return (
     <div>
-      <Topbanner></Topbanner>
+      <div className="App-header">
+        <HeaderContainer></HeaderContainer>
+      </div>
+      <div className="App-body">
+        <BodyContainer></BodyContainer>
+      </div>
     </div>
-
   );
 }
 
